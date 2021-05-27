@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            
+                
+                    <h1>CHALLENGE 1: Your age in days</h1>
+                
+            <div class="flex-box-container">
+                <div><button type="button" class="btn btn-primary" onClick="accept()">Click me</button></div>
+                <div><button type="button"class="btn btn-danger" onClick="reset()">Reset</button></div>
+            </div>
+            <div class="flex-box-container">
+                <div id="flex-box-result"></div>
+            </div>
+            
+        </div>
+        <div class="container-1">
+            <h1>CHALLENGE 2: Cat generator</h1>
+            <button class="btn btn-success" onClick="generatecat()">Generate cat</button>
+            <div class="flex-box-container-1" id="flex-box-img"></div>
+
+        </div>
+        <div class="container-2">
+            <h2>CHALLENGE 3: Rock Paper Scissors</h2>        
+            <div class="flex-box-rps" id="flex-box-rps-div">
+                <img id="rock" src="../images/rock.jpg" height=150 width=150 alt="rock" onClick="rpsGame(this)">
+                <img id="paper" src="../images/paper.jpg" height=150 width=150 alt="paper" onClick="rpsGame(this)">
+                <img id="scissors" src="../images/scissors.png" height=150 width=150 alt="scissors" onClick="rpsGame(this)">
+            </div>
+            <div class="btnn" id='btn'></div>
+        </div>
+        <div class="container-3">
+            <h2 id="change-color">Challenge-4: Change the color of all buttons</h2>
+            
+            <div class="flex-box-pick-color">
+
+                <form action="">
+                    <select name="backdrop" id="background" onchange="buttoncolor(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                    </select>
+                </form>
+                <button class="btn btn-primary">Wee!!</button>
+                <button class="btn btn-danger">Yahoo</button>
+                <button class="btn btn-warning">Google</button>
+                <button class="btn btn-success">Facebook</button>
+            </div>
+        </div>
+        <script src="home.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
