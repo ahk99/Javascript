@@ -152,3 +152,17 @@ function buttonRandom() {
         all_buttons[i].classList.add(choices[count]);
     }
 }
+
+
+//Challenge 5 Blackjack
+
+let blackjackgame = {
+    'you': { 'spanscore': '#You-result', 'div': '#you-box', 'score': 0 },
+    'dealer': { 'spanscore': '#Dealer-result', 'div': '#dealer-box', 'score': 0 }
+}
+
+document.querySelector("#button-hit").addEventListener('click', blackjackhit);
+
+function blackjackhit() {
+    alert("ouch, you hit me");
+}
