@@ -36,7 +36,7 @@
 .flex-box-container-row1,
 .flex-box-container-row2 {
     width: auto;
-    background-color: aqua;
+    background-color: rgb(3, 53, 1);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -47,7 +47,7 @@
 
 .flex-box-container-row1 div {
     border: 2px solid black;
-    width: 450px;
+    width: 490px;
     height: 300px;
 }
 
@@ -56,4 +56,8 @@ tr,
 th,
 td {
     border: 1px solid black;
+}
+
+.flex-box-container-row1 h2 {
+    color: white;
 }
