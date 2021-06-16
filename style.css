@@ -1,7 +1,8 @@
 .container,
 .container-1,
 .container-2,
-.container-3 {
+.container-3,
+.container-4 {
     border: 3px solid black;
     margin: 0 auto;
     width: 75%;
@@ -11,7 +12,8 @@
 .flex-box-container,
 .flex-box-container-1,
 .flex-box-rps,
-.flex-box-pick-color {
+.flex-box-pick-color,
+.flex-box-container-row3 {
     display: flex;
     border: 2px solid black;
     padding: 10px;
@@ -29,4 +31,29 @@
 
 .flex-box-rps img:hover {
     box-shadow: 0px 10px 10px rgb(70, 70, 226, 7);
+}
+
+.flex-box-container-row1,
+.flex-box-container-row2 {
+    width: auto;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.flex-box-container-row1 div {
+    border: 2px solid black;
+    width: 450px;
+    height: 300px;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
 }
