@@ -158,11 +158,29 @@ function buttonRandom() {
 
 let blackjackgame = {
     'you': { 'spanscore': '#You-result', 'div': '#you-box', 'score': 0 },
-    'dealer': { 'spanscore': '#Dealer-result', 'div': '#dealer-box', 'score': 0 }
-}
+    'dealer': { 'spanscore': '#Dealer-result', 'div': '#dealer-box', 'score': 0 },
+};
 
+const YOU = blackjackgame['you'];
+const DEALER = blackjackgame['dealer'];
+
+const hitSound = new Audio('/images/sounds/swish.m4a');
 document.querySelector("#button-hit").addEventListener('click', blackjackhit);
 
+document.querySelector('#button-deal'), addEventListener('click', deal);
+
 function blackjackhit() {
-    alert("ouch, you hit me");
+    showCard(YOU);
+}
+
+function showCard(activeLayer) {
+    let cardimage = document.createElement('img');
+    cardimage.src = 'images/images/Q.png';
+    document.querySelector(activeLayer['div']).appendChild(cardimage);
+    hitSound.play();
+}
+
+function deal() {
+    let yourimage = document.querySelector('#you-box').querySelectorAll('img');
+    console.log(yourimage);
 }
