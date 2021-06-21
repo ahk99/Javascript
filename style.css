@@ -13,13 +13,26 @@
 .flex-box-container-1,
 .flex-box-rps,
 .flex-box-pick-color,
-.flex-box-container-row3 {
+.flex-box-container-row3,
+.flex-box-container-row1,
+.flex-box-container-row2 {
     display: flex;
     border: 2px solid black;
     padding: 10px;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.flex-box-container-row1,
+.flex-box-container-row2 {
+    background-color: rgb(3, 92, 22);
+    color: white;
+}
+
+.flex-box-container-row1 img {
+    width: 25%;
+    padding: 10px;
 }
 
 .flex-box-container div {
@@ -33,22 +46,12 @@
     box-shadow: 0px 10px 10px rgb(70, 70, 226, 7);
 }
 
-.flex-box-container-row1,
-.flex-box-container-row2 {
-    width: auto;
-    background-color: aqua;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: space-around;
-    border: 2px solid black;
-}
-
 .flex-box-container-row1 div {
     border: 2px solid black;
-    width: 450px;
-    height: 300px;
+    padding: 10px;
+    flex: 1;
+    height: 350px;
+    text-align: center;
 }
 
 table,
@@ -56,4 +59,5 @@ tr,
 th,
 td {
     border: 1px solid black;
+    padding: 5px;
 }
